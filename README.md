@@ -33,8 +33,6 @@
 - `database.dat` - сериализованные таблицы, их структура и записи;
 - `indexes.dat` - сериализованные индексы.
 
-При последующих запусках программа загружает эти файлы. Не удаляйте их, если хотите сохранить базу данных.
-
 ## 3. Архитектура
 
 ### Диаграмма классов
@@ -130,23 +128,6 @@ sequenceDiagram
 4. Скопируйте в него код из файла `MiniDB.java`.
 5. Запустите метод `main`.
 6. В появившейся консоли вводите команды SQL по одной строке.
-
-### Через командную строку Windows
-
-Откройте командную строку в папке, где лежит `MiniDB.java`, и выполните:
-
-```text
-javac -encoding UTF-8 MiniDB.java
-java MiniDB
-```
-
-Если русские буквы в консоли отображаются неправильно, перед запуском можно выполнить:
-
-```text
-chcp 65001
-```
-
-Для выхода введите `exit`.
 
 ## 5. Пример работы
 
@@ -260,8 +241,5 @@ SELECT * FROM cars WHERE brand = 'Toyota';
 ## 11. Использованные источники
 
 - Документация Java: https://docs.oracle.com/javase/8/docs/
-- Java Object Serialization Specification: https://docs.oracle.com/javase/8/docs/platform/serialization/spec/serialTOC.html
-- Документация `java.util.TreeMap`: https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html
-- Документация `java.nio.file.Files`: https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html
 
 Работа выполнена индивидуально.
